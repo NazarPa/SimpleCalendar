@@ -1,6 +1,9 @@
 import calendar
 
-yy = 2022  # year
-mm = 6    # month
+yy = int(input('Enter the year: '))  # year
+mm = int(input('Enter the month:' ))    # month
 
-print(calendar.month(yy, mm))
+try:
+    print('\n\n' + calendar.month(yy, mm))
+except:
+    print('\nWrong value!')
